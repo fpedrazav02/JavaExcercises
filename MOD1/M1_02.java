@@ -45,15 +45,15 @@ public class M1_02 {
        
         // II (a*c)%b
         System.out.println("\nResultado de la operación II con decimales [(a*c)%b]: " + ((a*c)%b));
-        System.out.println("\nResultado de la operación II sin decimales [(a*c)%b]: " + ((decimalA*decimalB)/decimalC));
+        System.out.println("\nResultado de la operación II sin decimales [(a*c)%b]: " + ((decimalA*decimalC)%decimalB));
 
         // III 2*(a+c-b)/(b*c)
         System.out.println("\nResultado de la operación III con decimales [2*(a+c-b)/(b*c)]: " + (2*(a+c-b)/(b*c)));
-        System.out.println("\nResultado de la operación III sin decimales [2*(a+c-b)/(b*c)]: " + ((decimalA*decimalB)/decimalC));
+        System.out.println("\nResultado de la operación III sin decimales [2*(a+c-b)/(b*c)]: " + (2*(decimalA+decimalC-decimalB)/(decimalB*decimalC)));
    
         // IV ((a*c)+(b%a))/a-c
         System.out.println("\nResultado de la operación IV con decimales [((a*c)+(b%a))/a-c]: " + (((a*c)+(b%a))/a-c));
-        System.out.println("\nResultado de la operación IV sin decimales [((a*c)+(b%a))/a-c]: " + ((decimalA*decimalB)/decimalC));
+        System.out.println("\nResultado de la operación IV sin decimales [((a*c)+(b%a))/a-c]: " + (((decimalA*decimalC)+(decimalB%decimalA))/decimalA-decimalC));
     }
     
 }
